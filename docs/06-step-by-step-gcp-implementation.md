@@ -90,7 +90,7 @@ Terraform creates repeatable production infrastructure:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate   # Windows Git Bash: source .venv/Scripts/activate
 pip install -r requirements.txt
 pytest
 uvicorn app.main:app --host 0.0.0.0 --port 8080

@@ -34,6 +34,7 @@ Production-ready starter project for building an **AI Agentic Migration Factory*
 source .venv/bin/activate
 ```
 
+> On Windows Git Bash, activation is usually: `source .venv/Scripts/activate`.
 > If your network blocks PyPI, set `PIP_INDEX_URL` to your internal mirror before running the script.
 
 ## Run locally
