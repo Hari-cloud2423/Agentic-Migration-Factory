@@ -35,6 +35,8 @@ source .venv/bin/activate
 ```
 
 > On Windows Git Bash, activation is usually: `source .venv/Scripts/activate`.
+> Quick check: `sed -n '1,12p' scripts/install_deps.sh` should show `command -v python` and `command -v py`.
+> If it still starts directly with `python -m venv`, your local branch is missing the Windows fix commit.
 > If your network blocks PyPI, set `PIP_INDEX_URL` to your internal mirror before running the script.
 
 ## Run locally

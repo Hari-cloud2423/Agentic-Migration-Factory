@@ -91,6 +91,8 @@ Terraform creates repeatable production infrastructure:
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Windows Git Bash: source .venv/Scripts/activate
+# If install script still starts with `python -m venv`, pull latest fixes first:
+# git fetch origin && git pull
 pip install -r requirements.txt
 pytest
 uvicorn app.main:app --host 0.0.0.0 --port 8080
